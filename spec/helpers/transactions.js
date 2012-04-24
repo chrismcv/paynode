@@ -29,6 +29,23 @@ exports.missingCardNumber = {amt:'99.06'
    ,countrycode:'US'
    ,zip:'68102'
   }
+exports.recurringPaymentProfile = {
+    amt:'99.0'
+   ,creditcardtype:'Visa'
+   ,acct:'4834907016040081'
+   ,expdate:'032015'
+   ,cvv2:'000'
+   ,firstname:'John'
+   ,lastname:'Doe'
+   ,desc: 'Recurring Payment'
+   ,profilestartdate: '2012-05-01T12:00:00Z' // UTC date format - if this is wrong you get a 'Date Required' error
+   ,billingperiod:'Month'
+   ,billingfrequency:'1'
+}
+
+exports.invalidProfileID = {
+    profileID:'12345'
+}
   
 var doDirectPaymentSigUser = {user:'webpro_1279778538_biz_api1.gmail.com'
   ,pwd:'1279778545'
